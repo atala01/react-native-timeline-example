@@ -9,13 +9,15 @@ import {
   Platform,
   StyleSheet,
   Text,
-  View
+  View,
+  ImageBackground,
+  Dimensions
 } from 'react-native';
-import Timeline from 'react-native-timeline-listview'
-import { ENGINE_METHOD_DIGESTS } from 'constants';
+import Timeline from 'react-native-timeline'
+let { width, height } = Dimensions.get("window");
 
-type Props = {};
-export default class App extends Component<Props> {
+
+export default class App extends Component {
   timeline = null;
 
   constructor() {
@@ -81,17 +83,196 @@ export default class App extends Component<Props> {
       {
         time: '12:00',
         title: 'Lunch'
+      }, {
+        time: '16:30',
+        title: 'Go to Fitness center',
+        description: 'Look out for the Best Gym & Fitness Centers around me :)',
+        imageUrl: 'https://cloud.githubusercontent.com/assets/21040043/24240422/20d84f6c-0fe4-11e7-8f1d-9dbc594d0cfa.jpg'
+      }, {
+        time: '16:30',
+        title: 'Go to Fitness center',
+        description: 'Look out for the Best Gym & Fitness Centers around me :)',
+        imageUrl: 'https://cloud.githubusercontent.com/assets/21040043/24240422/20d84f6c-0fe4-11e7-8f1d-9dbc594d0cfa.jpg'
+      }, {
+        time: '16:30',
+        title: 'Go to Fitness center',
+        description: 'Look out for the Best Gym & Fitness Centers around me :)',
+        imageUrl: 'https://cloud.githubusercontent.com/assets/21040043/24240422/20d84f6c-0fe4-11e7-8f1d-9dbc594d0cfa.jpg'
+      }, {
+        time: '16:30',
+        title: 'Go to Fitness center',
+        description: 'Look out for the Best Gym & Fitness Centers around me :)',
+        imageUrl: 'https://cloud.githubusercontent.com/assets/21040043/24240422/20d84f6c-0fe4-11e7-8f1d-9dbc594d0cfa.jpg'
+      }, {
+        time: '16:30',
+        title: 'Go to Fitness center',
+        description: 'Look out for the Best Gym & Fitness Centers around me :)',
+        imageUrl: 'https://cloud.githubusercontent.com/assets/21040043/24240422/20d84f6c-0fe4-11e7-8f1d-9dbc594d0cfa.jpg'
+      }, {
+        time: '16:30',
+        title: 'Go to Fitness center',
+        description: 'Look out for the Best Gym & Fitness Centers around me :)',
+        imageUrl: 'https://cloud.githubusercontent.com/assets/21040043/24240422/20d84f6c-0fe4-11e7-8f1d-9dbc594d0cfa.jpg'
+      }, {
+        time: '16:30',
+        title: 'Go to Fitness center',
+        description: 'Look out for the Best Gym & Fitness Centers around me :)',
+        imageUrl: 'https://cloud.githubusercontent.com/assets/21040043/24240422/20d84f6c-0fe4-11e7-8f1d-9dbc594d0cfa.jpg'
+      }, {
+        time: '16:30',
+        title: 'Go to Fitness center',
+        description: 'Look out for the Best Gym & Fitness Centers around me :)',
+        imageUrl: 'https://cloud.githubusercontent.com/assets/21040043/24240422/20d84f6c-0fe4-11e7-8f1d-9dbc594d0cfa.jpg'
+      }, {
+        time: '16:30',
+        title: 'Go to Fitness center',
+        description: 'Look out for the Best Gym & Fitness Centers around me :)',
+        imageUrl: 'https://cloud.githubusercontent.com/assets/21040043/24240422/20d84f6c-0fe4-11e7-8f1d-9dbc594d0cfa.jpg'
+      }, {
+        time: '16:30',
+        title: 'Go to Fitness center',
+        description: 'Look out for the Best Gym & Fitness Centers around me :)',
+        imageUrl: 'https://cloud.githubusercontent.com/assets/21040043/24240422/20d84f6c-0fe4-11e7-8f1d-9dbc594d0cfa.jpg'
+      }, {
+        time: '16:30',
+        title: 'Go to Fitness center',
+        description: 'Look out for the Best Gym & Fitness Centers around me :)',
+        imageUrl: 'https://cloud.githubusercontent.com/assets/21040043/24240422/20d84f6c-0fe4-11e7-8f1d-9dbc594d0cfa.jpg'
+      }, {
+        time: '16:30',
+        title: 'Go to Fitness center',
+        description: 'Look out for the Best Gym & Fitness Centers around me :)',
+        imageUrl: 'https://cloud.githubusercontent.com/assets/21040043/24240422/20d84f6c-0fe4-11e7-8f1d-9dbc594d0cfa.jpg'
+      },
+      {
+        time: '09:00',
+        title: 'Archery Training',
+        description: 'The Beginner Archery and Beginner Crossbow course does not require you to bring any equipment, since everything you need will be provided for the course. ',
+        lineColor: '#009688',
+        imageUrl: 'https://cloud.githubusercontent.com/assets/21040043/24240340/c0f96b3a-0fe3-11e7-8964-fe66e4d9be7a.jpg'
+      },
+      {
+        time: '10:45',
+        title: 'Play Badminton',
+        description: 'Badminton is a racquet sport played using racquets to hit a shuttlecock across a net.',
+        imageUrl: 'https://cloud.githubusercontent.com/assets/21040043/24240405/0ba41234-0fe4-11e7-919b-c3f88ced349c.jpg'
+      },
+      {
+        time: '12:00',
+        title: 'Lunch'
+      },
+      {
+        time: '14:00',
+        title: 'Watch Soccer',
+        description: 'Team sport played between two teams of eleven players with a spherical ball. ',
+        lineColor: '#009688',
+        imageUrl: 'https://cloud.githubusercontent.com/assets/21040043/24240419/1f553dee-0fe4-11e7-8638-6025682232b1.jpg'
+      },
+      {
+        time: '16:30',
+        title: 'Go to Fitness center',
+        description: 'Look out for the Best Gym & Fitness Centers around me :)',
+        imageUrl: 'https://cloud.githubusercontent.com/assets/21040043/24240422/20d84f6c-0fe4-11e7-8f1d-9dbc594d0cfa.jpg'
+      },
+      {
+        time: '12:00',
+        title: 'Lunch'
+      },
+      {
+        time: '12:00',
+        title: 'Lunch'
+      },
+      {
+        time: '12:00',
+        title: 'Lunch'
+      },
+      {
+        time: '12:00',
+        title: 'Lunch'
+      },
+      {
+        time: '12:00',
+        title: 'Lunch'
+      },
+      {
+        time: '12:00',
+        title: 'Lunch'
+      },
+      {
+        time: '12:00',
+        title: 'Lunch'
+      }, {
+        time: '16:30',
+        title: 'Go to Fitness center',
+        description: 'Look out for the Best Gym & Fitness Centers around me :)',
+        imageUrl: 'https://cloud.githubusercontent.com/assets/21040043/24240422/20d84f6c-0fe4-11e7-8f1d-9dbc594d0cfa.jpg'
+      }, {
+        time: '16:30',
+        title: 'Go to Fitness center',
+        description: 'Look out for the Best Gym & Fitness Centers around me :)',
+        imageUrl: 'https://cloud.githubusercontent.com/assets/21040043/24240422/20d84f6c-0fe4-11e7-8f1d-9dbc594d0cfa.jpg'
+      }, {
+        time: '16:30',
+        title: 'Go to Fitness center',
+        description: 'Look out for the Best Gym & Fitness Centers around me :)',
+        imageUrl: 'https://cloud.githubusercontent.com/assets/21040043/24240422/20d84f6c-0fe4-11e7-8f1d-9dbc594d0cfa.jpg'
+      }, {
+        time: '16:30',
+        title: 'Go to Fitness center',
+        description: 'Look out for the Best Gym & Fitness Centers around me :)',
+        imageUrl: 'https://cloud.githubusercontent.com/assets/21040043/24240422/20d84f6c-0fe4-11e7-8f1d-9dbc594d0cfa.jpg'
+      }, {
+        time: '16:30',
+        title: 'Go to Fitness center',
+        description: 'Look out for the Best Gym & Fitness Centers around me :)',
+        imageUrl: 'https://cloud.githubusercontent.com/assets/21040043/24240422/20d84f6c-0fe4-11e7-8f1d-9dbc594d0cfa.jpg'
+      }, {
+        time: '16:30',
+        title: 'Go to Fitness center',
+        description: 'Look out for the Best Gym & Fitness Centers around me :)',
+        imageUrl: 'https://cloud.githubusercontent.com/assets/21040043/24240422/20d84f6c-0fe4-11e7-8f1d-9dbc594d0cfa.jpg'
+      }, {
+        time: '16:30',
+        title: 'Go to Fitness center',
+        description: 'Look out for the Best Gym & Fitness Centers around me :)',
+        imageUrl: 'https://cloud.githubusercontent.com/assets/21040043/24240422/20d84f6c-0fe4-11e7-8f1d-9dbc594d0cfa.jpg'
+      }, {
+        time: '16:30',
+        title: 'Go to Fitness center',
+        description: 'Look out for the Best Gym & Fitness Centers around me :)',
+        imageUrl: 'https://cloud.githubusercontent.com/assets/21040043/24240422/20d84f6c-0fe4-11e7-8f1d-9dbc594d0cfa.jpg'
+      }, {
+        time: '16:30',
+        title: 'Go to Fitness center',
+        description: 'Look out for the Best Gym & Fitness Centers around me :)',
+        imageUrl: 'https://cloud.githubusercontent.com/assets/21040043/24240422/20d84f6c-0fe4-11e7-8f1d-9dbc594d0cfa.jpg'
+      }, {
+        time: '16:30',
+        title: 'Go to Fitness center',
+        description: 'Look out for the Best Gym & Fitness Centers around me :)',
+        imageUrl: 'https://cloud.githubusercontent.com/assets/21040043/24240422/20d84f6c-0fe4-11e7-8f1d-9dbc594d0cfa.jpg'
+      }, {
+        time: '16:30',
+        title: 'Go to Fitness center',
+        description: 'Look out for the Best Gym & Fitness Centers around me :)',
+        imageUrl: 'https://cloud.githubusercontent.com/assets/21040043/24240422/20d84f6c-0fe4-11e7-8f1d-9dbc594d0cfa.jpg'
+      }, {
+        time: '16:30',
+        title: 'Go to Fitness center',
+        description: 'Look out for the Best Gym & Fitness Centers around me :)',
+        imageUrl: 'https://cloud.githubusercontent.com/assets/21040043/24240422/20d84f6c-0fe4-11e7-8f1d-9dbc594d0cfa.jpg'
       },
     ]
-    this.state = { selected: null }
-  }
-
-  componentDidMount(){
-    this.timeline.
+    this.state = {
+      selected: null,
+      color: '#E84C3C'
+    }
   }
 
   onEventPress(data) {
     this.setState({ selected: data })
+    let randomIndex = Math.floor(Math.random(Date.now()) * this.data.length) / 2;
+    this.timeline.scrollToIndex({ animated: true, index: randomIndex });
   }
 
   renderSelected() {
@@ -99,42 +280,39 @@ export default class App extends Component<Props> {
       return <Text style={{ marginTop: 10 }}>Selected event: {this.state.selected.title} at {this.state.selected.time}</Text>
   }
 
-  scrollToBottom(animated = true) {
-    if (this.listHeight && this.footerY && this.footerY > this.listHeight) {
-      // Calculates the y scroll position inside the ListView
-      const scrollTo = this.footerY - this.listHeight
-
-      // Scroll that sucker!
-      this.refs.listView.scrollTo({
-        y: scrollTo,
-        animated: animated,
-      })
-    }
+  pageChanged(pageNumber) {
+    let color = '#' + Math.floor(Math.random() * 16777215).toString(16);
+    this.setState({
+      color: color
+    })
   }
 
   render() {
     return (
-      <View style={styles.container}>
-        <Timeline
-          style={styles.list}
-          data={this.data}
-          circleSize={20}
-          circleColor='rgba(0,0,0,0)'
-          lineColor='rgb(45,156,219)'
-          timeContainerStyle={{ minWidth: 52, marginTop: -5 }}
-          timeStyle={{ textAlign: 'center', backgroundColor: '#ff9797', color: 'white', padding: 5, borderRadius: 13 }}
-          descriptionStyle={{ color: 'gray' }}
-          options={{
-            style: { paddingTop: 5 },
-            removeClippedSubviews: false,
-            ref: tl => this.timeline = tl
-          }}
-          innerCircle={'icon'}
-          onEventPress={this.onEventPress}
-          separator={false}
-          detailContainerStyle={{ marginBottom: 20, paddingLeft: 5, paddingRight: 5, backgroundColor: "#BBDAFF", borderRadius: 10 }}
-          columnFormat='two-column'
-        />
+      <View style={[styles.container,{
+        backgroundColor: this.state.color
+      }]}>
+          <Timeline
+            style={styles.list}
+            data={this.data}
+            circleSize={20}
+            circleColor='rgba(0,0,0,0)'
+            lineColor='rgb(45,156,219)'
+            timeContainerStyle={{ minWidth: 52, marginTop: -5 }}
+            timeStyle={{ textAlign: 'center', backgroundColor: '#ff9797', color: 'white', padding: 5, borderRadius: 13 }}
+            descriptionStyle={{ color: 'gray' }}
+            pageChanged={this.pageChanged.bind(this)}
+            options={{
+              style: { paddingTop: 5 },
+              removeClippedSubviews: false,
+              ref: tl => this.timeline = tl
+            }}
+            innerCircle={'icon'}
+            onEventPress={this.onEventPress}
+            separator={false}
+            detailContainerStyle={{ marginBottom: 20, paddingLeft: 5, paddingRight: 5, backgroundColor: "#BBDAFF", borderRadius: 10 }}
+            columnFormat='two-column'
+          />
       </View>
     );
   }
@@ -143,12 +321,12 @@ export default class App extends Component<Props> {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    padding: 20,
-    backgroundColor: 'white'
+    padding: 20
   },
   list: {
     flex: 1,
     marginTop: 20,
+    backgroundColor: 'transparent'
   },
   title: {
     fontSize: 16,

@@ -9,7 +9,7 @@
   "dependencies": {
     "react": "16.3.1",
     "react-native": "0.55.3",
-    "react-native-timeline-listview": "^0.2.3"
+    "react-native-timeline": "https://github.com/peacecwz/react-native-timeline"
   },
   "devDependencies": {
     "babel-jest": "22.4.3",

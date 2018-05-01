@@ -4142,9 +4142,9 @@ react-is@^16.3.1:
   version "16.3.2"
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.3.2.tgz#f4d3d0e2f5fbb6ac46450641eb2e25bf05d36b22"
 
-react-native-timeline-listview@^0.2.3:
-  version "0.2.3"
-  resolved "https://registry.yarnpkg.com/react-native-timeline-listview/-/react-native-timeline-listview-0.2.3.tgz#e46b7f0fd2c2206329eee6194795e03899afe882"
+"react-native-timeline@https://github.com/peacecwz/react-native-timeline":
+  version "1.0.0"
+  resolved "https://github.com/peacecwz/react-native-timeline#ce3fe6b12e0c9b8e9352e631da49f174dd6511c4"
 
 react-native@0.55.3:
   version "0.55.3"
