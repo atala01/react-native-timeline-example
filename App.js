@@ -13,7 +13,7 @@ import {
   Dimensions,
   StatusBar
 } from 'react-native';
-import Timeline from 'react-native-timeline'
+import Timeline from 'react-native-timeline-list'
 let { width, height } = Dimensions.get("window");
 
 
